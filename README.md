@@ -1,50 +1,25 @@
-# 🚀 My Windows 10 Setup 
 
-![Windows 10](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+Currently includes configuration for:
+* pwsh (PowerShell profile)
+* vscode
+* zed
+* flowlauncher
 
-My personal Windows 10 post-installation setup repository! 
+and:
 
-This repository contains the scripts, configurations, and tweaks I use to automate my Windows 10 setup debloat the system and install my essential tools from web and Python environments to powerful terminal utilities in one go!!
+* wallpapers I use
 
-## ✨ Features
+`pwsh_bak.ps1` is a legacy/backup PowerShell profile kept around for reference — it sets up the `oh-my-posh` prompt and `Terminal-Icons`, plus a handful of git shortcuts (`gs`, `ga`, `gp`, `gpull`, `gcl`, `gcom`, `lazyg`) and file utilities (`touch`, `mkd`, `trash`, `ff`, `head`, `sed`, `which`, `la`, `ll`).
 
-* **⚡ Automated Software Installation:** Quickly installs essential apps, browsers, and developer tools.
-* **🧹 System Optimization & Debloat:** Removes unnecessary built-in Windows telemetry and bloatware to keep the system fast and clean.
-* **👨‍💻 Development Ready:** Pre-configures environments for Web Development and Python out of the box.
-* **⌨️ Terminal Power-Ups:** Integrates fast CLI search tools like `fzf` and `fd` for a frictionless command-line experience.
-* **📝 Knowledge Management:** Sets up digital brain tools including Obsidian and Notion.
+## Usage
 
-## 📦 What gets installed?
+Clone the repo, then symlink or copy the folder you want into place:
 
-Here is a breakdown of the primary software and tools included in this setup:
+```powershell
+git clone https://github.com/Doodocat/dots.git
+```
 
-### 💻 Development Tools
-* **Languages:** Python 3.x, Node.js
-* **Editors & IDEs:** Visual Studio Code
-* **Version Control:** Git, GitHub Desktop
-
-### ⌨️ Terminal & CLI Utilities
-* **Terminal:** Windows Terminal
-* **Fuzzy Finder:** `fzf` (Command-line fuzzy finder)
-* **File Search:** `fd` (Simple, fast, and user-friendly alternative to `find`)
-
-### 🧠 Productivity & Note-Taking
-* Obsidian
-* Notion
-
-### 🛠 Utilities & Media
-* **Browsers:**  Helium / Waterfox
-* **Media:** VLC, Spotify
-* **Misc:** 7-Zip, FLowlauncher
-
-## 🚀 Usage
-
-> **⚠️ Disclaimer:** Please review the scripts before running them on your own machine. Some tweaks modify the registry and system settings. Run at your own risk!
-
-1. **Open PowerShell as Administrator.**
-2. Clone this repository to your local machine:
-   ```powershell
-   git clone [https://github.com/A44Di/My-Win10-Setup.git](https://github.com/A44Di/My-Win10-Setup.git)
-   cd My-Win10-Setup
+* **pwsh** → `$PROFILE` location (e.g. `~\Documents\PowerShell\`)
+* **vscode** → VS Code user settings folder
+* **zed** → `~\.config\zed\` (or the Windows equivalent)
+* **flowlauncher** → Flow Launcher's `Themes` folder
