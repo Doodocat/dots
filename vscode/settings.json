@@ -3,31 +3,30 @@
    "update.enableWindowsBackgroundUpdates": false,
    "update.mode": "none",
 
-   // "code-runner.saveFileBeforeRun": true,
-   // "code-runner.runInTerminal": true,
-
-   "liveServer.settings.donotShowInfoMsg": true,
-   "liveServer.settings.donotVerifyTags": true,
-
-   "window.menuBarVisibility": "toggle",
-   "window.zoomLevel": 1,
-
-   "explorer.confirmDelete": false,
-   "explorer.confirmDragAndDrop": false,
-
    "editor.defaultFormatter": "esbenp.prettier-vscode",
    "editor.formatOnSave": true,
    "prettier.tabWidth": 3,
 
-   "editor.fontFamily": "DankMono Nerd Font",
-   "editor.fontSize": 16,
-   "editor.wordWrap": "on",
+   "code-runner.runInTerminal": true,
+   "code-runner.saveFileBeforeRun": true,
+
+   "window.menuBarVisibility": "toggle",
+   "window.zoomLevel": 1,
+
+   "editor.fontFamily": "NotoMono Nerd Font",
    "editor.fontLigatures": true,
-   "editor.cursorBlinking": "solid",
+   "editor.wordWrap": "on",
    "editor.minimap.enabled": false,
+   "editor.cursorBlinking": "solid",
 
    "workbench.startupEditor": "none",
-   "workbench.colorTheme": "One Dark Pro",
-   "workbench.activityBar.location": "top",
-   "workbench.sideBar.location": "right",
+   "extensions.ignoreRecommendations": true,
+   "workbench.colorTheme": "Monokai",
+
+   "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": true,
+      "scminput": false,
+   },
 }
