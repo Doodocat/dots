@@ -18,9 +18,8 @@ function lazyg {
     git push
 }
 
-# File / Directory Utilities
-function cl { Clear-Host } # TO CLEAR THE TERMINAL
-function xx { exit } # LIKE exit COMMAND EXIT THE SESSION
+function cl { Clear-Host } # = CLEAR & CLS
+function xx { exit } # = EXIT
 
 function touch ($File) {
     if (Test-Path $File) {
