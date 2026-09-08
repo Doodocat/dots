@@ -1,5 +1,6 @@
-oh-my-posh init pwsh --config '1_shell' | Invoke-Expression  
 Import-Module -Name Terminal-Icons
+$omp_config = Join-Path $PSScriptRoot ".\doodocat.omp.json.json"
+oh-my-posh init pwsh --config $omp_config | Invoke-Expression
 
 function gs { git status }
 function ga { git add . }
