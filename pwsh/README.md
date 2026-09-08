@@ -26,7 +26,7 @@ Before you copy this profile in, grab these without them, things will break or l
 
 **Listing** — `la`, `ll` (with icons, thanks to Terminal-Icons)
 
-**Misc** — `cl` (clear), `xx` (exit), `g` (jump to your GitHub folder via zoxide)
+**Misc** — `cc` (clear), `xx` (exit), `g` (jump to your GitHub folder via zoxide)
 
 ## Notess
 
