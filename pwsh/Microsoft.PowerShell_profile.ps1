@@ -18,7 +18,7 @@ function lazyg {
     git push
 }
 
-function cl { Clear-Host } # = CLEAR & CLS
+function cc { Clear-Host } # = CLEAR & CLS
 function xx { exit } # = EXIT
 
 function touch ($File) {
