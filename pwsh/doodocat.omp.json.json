@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "version": 3,
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#5c5c5c",
+          "template": "┌─["
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#ff75a0",
+          "template": "doodocat"
+        },
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#5c5c5c",
+          "template": "] "
+        },
+        {
+          "type": "path",
+          "style": "plain",
+          "foreground": "#e0e0e0",
+          "properties": {
+            "style": "mixed",
+            "mixed_threshold": 3,
+            "folder_separator_template": "<#ff75a0>/</>"
+          },
+          "template": "\uf07c {{ .Path }} "
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#ff75a0",
+          "foreground_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}#e0a96d{{ end }}",
+            "{{ if gt .Ahead 0 }}#a2d2ff{{ end }}",
+            "{{ if gt .Behind 0 }}#a2d2ff{{ end }}"
+          ],
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_status": true
+          },
+          "template": "({{ .HEAD }}{{ if .Working.Changed }} *{{ end }}) "
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "type": "text",
+          "style": "plain",
+          "foreground": "#5c5c5c",
+          "template": "└─"
+        },
+        {
+          "type": "status",
+          "style": "plain",
+          "foreground": "#ff75a0",
+          "foreground_templates": ["{{ if gt .Code 0 }}#ff4d6d{{ end }}"],
+          "properties": {
+            "always_enabled": true
+          },
+          "template": "-> "
+        }
+      ]
+    }
+  ]
+}
