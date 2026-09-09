@@ -1,5 +1,8 @@
-oh-my-posh init pwsh --config '1_shell' | Invoke-Expression  
+# oh-my-posh init pwsh --config '1_shell' | Invoke-Expression && NOTE: DEFAULT -OH-MY-POSH, CONFIG NOT USING ANYMORE
+
 Import-Module -Name Terminal-Icons
+$omp_config = Join-Path $PSScriptRoot ".\doodocat.omp.json.json"
+oh-my-posh init pwsh --config $omp_config | Invoke-Expression
 
 function gs { git status }
 function ga { git add . }
@@ -18,9 +21,8 @@ function lazyg {
     git push
 }
 
-# File / Directory Utilities
-function cl { Clear-Host } # TO CLEAR THE TERMINAL
-function xx { exit } # LIKE exit COMMAND EXIT THE SESSION
+function cc { Clear-Host } # = CLEAR & CLS
+function xx { exit } # = EXIT
 
 function touch ($File) {
     if (Test-Path $File) {
